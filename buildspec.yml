@@ -3,10 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
-        - sudo apt-get update
-        - curl "https://bootstrap.pypa.io/pip/2.7/get-pip.py" -o "get-pip.py"
-        - python get-pip.py
-        - pip install Flask
+        - python -m pip install Flask
   build:
     commands:
       - echo Build started on `date`
